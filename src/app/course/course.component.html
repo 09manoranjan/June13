@@ -1,0 +1,15 @@
+<section class="course">
+   <div class="container">
+      <h1 class="text-center my-5">All Course</h1>
+      <div class="row">
+         <div class="col-lg-6 " *ngFor="let data of course">
+            <div class="box my-3 mx-5 px-4 py-4">
+               <img src="{{data.image}}" width="100%">
+               <h2>{{data.name}}</h2>
+               <p>{{data.description}}</p>
+               <button class="btn btn-outline-danger btn-sm">watch Now</button>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
